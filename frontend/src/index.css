@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+ .form-feedback { margin: 0; padding: 10px 12px; border-radius: 10px; font-size: .94rem; }
+ .form-feedback--success { background: rgba(36, 74, 56, .12); color: #244a38; }
+ .form-feedback--error { background: rgba(173, 52, 62, .12); color: #8a2231; }

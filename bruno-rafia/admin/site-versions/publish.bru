@@ -1,0 +1,17 @@
+meta {
+  name: Publier la version
+  type: http
+  seq: 8
+}
+
+patch {
+  url: {{baseUrl}}/api/site/{{siteId}}/publish
+  body: none
+  auth: inherit
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200]).to.include(res.getStatus());
+  });
+}

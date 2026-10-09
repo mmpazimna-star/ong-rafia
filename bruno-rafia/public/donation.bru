@@ -1,0 +1,27 @@
+meta {
+  name: Envoyer une donation
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/public/donations
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Donateur Test",
+    "email": "donateur@example.com",
+    "phone": "+228 90 00 00 00",
+    "amount": 5000,
+    "message": "Test de donation depuis Bruno"
+  }
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200, 201]).to.include(res.getStatus());
+  });
+}

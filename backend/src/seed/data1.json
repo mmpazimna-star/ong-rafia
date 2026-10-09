@@ -1,0 +1,91 @@
+{
+  "Home": {
+    "title": "ONG RAFIA",
+    "paragraph": "Depuis 1992, RAFIA accompagne les communautés rurales du Togo vers un développement durable.",
+    "backgroundImage": {
+      "name": "home-bg.jpg",
+      "type": "image/jpeg"
+    }
+  },
+
+  "About": {
+    "paragraph": "RAFIA est une ONG togolaise engagée dans le développement durable.",
+    "Why": [
+      "Approche participative",
+      "Transparence et engagement"
+    ],
+    "Why2": [
+      "Promotion du genre",
+      "Innovation sociale"
+    ],
+    "aboutImage": {
+      "name": "about.jpg",
+      "type": "image/jpeg"
+    }
+  },
+
+  "Activities": [
+    {
+      "icon": {
+        "name": "leaf.svg",
+        "type": "image/svg+xml"
+      },
+      "title": "Agriculture durable",
+      "text": "Promotion de l'agroécologie."
+    }
+  ],
+
+  "Projects": [
+    {
+      "title": "Transition agroécologique",
+      "largeImage": {
+        "name": "01-large.jpg",
+        "type": "image/jpeg"
+      },
+      "smallImage": {
+        "name": "01-small.jpg",
+        "type": "image/jpeg"
+      }
+    }
+  ],
+
+  "Team": [
+    {
+      "img": {
+        "name": "president.jpg",
+        "type": "image/jpeg"
+      },
+      "name": "Président",
+      "job": "Président de l'ONG RAFIA"
+    }
+  ],
+
+  "News": [
+    {
+      "img": {
+        "name": "news1.jpg",
+        "type": "image/jpeg"
+      },
+      "name": "Actualité",
+      "text": "RAFIA renforce les capacités locales."
+    }
+  ],
+
+  "Contact": {
+    "address": "Togo",
+    "phone": "+228 XX XX XX XX",
+    "email": "contact@ongrafia.org",
+    "facebook": "",
+    "twitter": "",
+    "youtube": ""
+  },
+
+  "Donation": {
+    "address": "Togo",
+    "phone": "+228 XX XX XX XX",
+    "email": "don@ongrafia.org",
+    "facebook": "",
+    "twitter": "",
+    "youtube": ""
+  }
+}

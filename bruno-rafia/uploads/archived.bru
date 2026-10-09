@@ -1,0 +1,21 @@
+meta {
+  name: Image privée archived (admin)
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/uploads/private/archived/home-bg.jpg
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{adminToken}}
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200, 404]).to.include(res.getStatus());
+  });
+}

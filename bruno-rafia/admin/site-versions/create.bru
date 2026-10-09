@@ -1,0 +1,46 @@
+meta {
+  name: Créer une version
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/site
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  description: Brouillon initial RAFIA avec toutes les sections
+  content: {"home":{"title":"ONG RAFIA","paragraph":"Depuis 1992, RAFIA accompagne les communautés rurales du Togo vers un développement durable."},"about":{"title":"À propos de RAFIA","paragraph":"RAFIA est une ONG togolaise engagée dans le développement durable et l'autonomisation des communautés.","why":["Approche participative","Transparence et engagement","Promotion du genre","Innovation sociale"]},"activities":[{"title":"Agriculture durable","text":"Promotion de l'agroécologie et de pratiques agricoles respectueuses de l'environnement."}],"projects":[{"title":"Transition agroécologique","description":"Accompagnement des communautés vers des pratiques agricoles durables."}],"team":[{"name":"Kossi Mensah","job":"Président de l'ONG RAFIA"}],"news":[{"name":"Renforcement communautaire","text":"RAFIA renforce les capacités locales à travers des formations ciblées."}],"contact":{"address":"Lomé, Togo","phone":"+228 90 00 00 00","email":"contact@ongrafia.org","facebook":"https://facebook.com/ongrafia","twitter":"https://twitter.com/ongrafia","youtube":"https://youtube.com/@ongrafia"},"donation":{"address":"Lomé, Togo","phone":"+228 90 00 00 01","email":"don@ongrafia.org","facebook":"https://facebook.com/ongrafia","twitter":"https://twitter.com/ongrafia","youtube":"https://youtube.com/@ongrafia"}}
+  home: @file(../backend/uploads/images/images_de_fond_ecran_et_arriere_plan_pour_un_site_web_agroec.jpg)
+  about: @file(../backend/uploads/images/OIG1.jpg)
+  activities[0]: @file(../backend/uploads/images/Agrocologie.jpg)
+  projectsl[0]: @file(../backend/uploads/images/images_adapts_au_projet_agricoles_africain.jpg)
+  projectss[0]: @file(../backend/uploads/images/accompagns_des_actualits_et_projets_innovants_afro_american.jpg)
+  team[0]: @file(../backend/uploads/images/ingenieure_agronome_africain.jpg)
+  news[0]: @file(../backend/uploads/images/images_pour_accompagnn_les_blog_et_actualits_du_cot_agricole.jpg)
+  contact[0]: 
+  donation[0]: 
+}
+
+script:post-response {
+  if ([200, 201].includes(res.status)) {
+    const b = res.body || {};
+    const s = b.site || b.data || b;
+    bru.setEnvVar("siteId", s._id || s.id);
+  }
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200, 201]).to.include(res.getStatus());
+  });
+}
+
+docs {
+  ## Créer un brouillon complet
+  
+  Crée une version draft avec les huit sections RAFIA et téléverse les images associées.
+  Les fichiers référencés proviennent de `backend/uploads/images/`.
+}

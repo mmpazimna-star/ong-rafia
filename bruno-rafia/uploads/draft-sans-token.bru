@@ -1,0 +1,17 @@
+meta {
+  name: Image draft sans token (refusé)
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/uploads/private/draft/home-bg.jpg
+  body: none
+  auth: none
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([401]).to.include(res.getStatus());
+  });
+}

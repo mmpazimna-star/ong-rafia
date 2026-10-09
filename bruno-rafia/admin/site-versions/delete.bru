@@ -1,0 +1,17 @@
+meta {
+  name: Supprimer la version
+  type: http
+  seq: 11
+}
+
+delete {
+  url: {{baseUrl}}/api/site/{{siteId}}
+  body: none
+  auth: inherit
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200, 204, 400]).to.include(res.getStatus());
+  });
+}

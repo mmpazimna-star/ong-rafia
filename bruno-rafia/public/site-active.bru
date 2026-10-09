@@ -1,0 +1,17 @@
+meta {
+  name: Site actif
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/site/active
+  body: json
+  auth: none
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200]).to.include(res.getStatus());
+  });
+}

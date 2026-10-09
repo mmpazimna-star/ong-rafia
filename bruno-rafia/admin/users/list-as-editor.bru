@@ -1,0 +1,21 @@
+meta {
+  name: Liste utilisateurs avec token éditeur (refusé)
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/api/users
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{editorToken}}
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([401, 403]).to.include(res.getStatus());
+  });
+}

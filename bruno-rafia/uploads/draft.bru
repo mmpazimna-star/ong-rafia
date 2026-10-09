@@ -1,0 +1,21 @@
+meta {
+  name: Image privée draft (éditeur)
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/uploads/private/draft/home-bg.jpg
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{editorToken}}
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200, 404]).to.include(res.getStatus());
+  });
+}

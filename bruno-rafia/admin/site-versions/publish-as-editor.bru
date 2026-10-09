@@ -1,0 +1,21 @@
+meta {
+  name: Publier avec token éditeur (refusé)
+  type: http
+  seq: 9
+}
+
+patch {
+  url: {{baseUrl}}/api/site/{{siteId}}/publish
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{editorToken}}
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([401, 403]).to.include(res.getStatus());
+  });
+}

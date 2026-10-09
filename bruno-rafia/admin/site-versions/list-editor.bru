@@ -1,0 +1,21 @@
+meta {
+  name: Liste versions (éditeur)
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/site
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{editorToken}}
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200]).to.include(res.getStatus());
+  });
+}

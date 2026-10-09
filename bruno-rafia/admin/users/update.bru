@@ -1,0 +1,24 @@
+meta {
+  name: Modifier utilisateur
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/users/{{userId}}
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Éditeur Modifié",
+    "role": "editor"
+  }
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200]).to.include(res.getStatus());
+  });
+}

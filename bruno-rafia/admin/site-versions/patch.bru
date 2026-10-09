@@ -1,0 +1,37 @@
+meta {
+  name: Modifier partiellement (PATCH)
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{baseUrl}}/api/site/{{siteId}}
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  description: Mise à jour partielle des sections RAFIA
+  content: {"home":{"title":"ONG RAFIA - Notre engagement"},"about":{"paragraph":"RAFIA accompagne les communautés rurales vers un développement durable."},"activities":[{"title":"Agroécologie","text":"Promotion de pratiques agricoles durables."}],"projects":[{"title":"Transition agroécologique","description":"Un accompagnement adapté aux communautés locales."}],"team":[{"name":"Kossi Mensah","job":"Président"}],"news":[{"name":"Renforcement communautaire","text":"De nouvelles formations sont proposées aux communautés."}],"contact":{"address":"Lomé, Togo","phone":"+228 90 00 00 00","email":"contact@ongrafia.org","facebook":"https://facebook.com/ongrafia","twitter":"https://twitter.com/ongrafia","youtube":"https://youtube.com/@ongrafia"},"donation":{"address":"Lomé, Togo","phone":"+228 90 00 00 01","email":"don@ongrafia.org","facebook":"https://facebook.com/ongrafia","twitter":"https://twitter.com/ongrafia","youtube":"https://youtube.com/@ongrafia"}}
+  ~home: @file(../backend/uploads/images/images_de_fond_ecran_et_arriere_plan_pour_un_site_web_agroec.jpg)
+  ~about: @file(../backend/uploads/images/OIG1.jpg)
+  ~activities[0]: @file(../backend/uploads/images/Agrocologie.jpg)
+  ~projectsl[0]: @file(../backend/uploads/images/images_adapts_au_projet_agricoles_africain.jpg)
+  ~projectss[0]: @file(../backend/uploads/images/accompagns_des_actualits_et_projets_innovants_afro_american.jpg)
+  ~team[0]: @file(../backend/uploads/images/ingenieure_agronome_africain.jpg)
+  ~news[0]: @file(../backend/uploads/images/images_pour_accompagnn_les_blog_et_actualits_du_cot_agricole.jpg)
+}
+
+docs {
+  ## Modifier partiellement le contenu
+
+  PATCH fusionne `content` avec la version existante et peut aussi remplacer les images jointes.
+  Les tableaux sont fusionnés par index; utiliser PUT pour remplacer ou supprimer des éléments de tableau.
+  Les fichiers référencés proviennent de `backend/uploads/images/`.
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200]).to.include(res.getStatus());
+  });
+}

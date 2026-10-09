@@ -1,0 +1,24 @@
+meta {
+  name: Login invalide
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/users/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "{{adminEmail}}",
+    "password": "mauvais-mot-de-passe"
+  }
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([400, 401]).to.include(res.getStatus());
+  });
+}

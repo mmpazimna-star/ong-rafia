@@ -1,0 +1,17 @@
+meta {
+  name: Cloner la version
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/api/site/{{siteId}}/clone
+  body: none
+  auth: inherit
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200, 201]).to.include(res.getStatus());
+  });
+}

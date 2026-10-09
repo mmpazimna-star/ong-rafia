@@ -1,0 +1,17 @@
+meta {
+  name: Détail version
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/site/{{siteId}}
+  body: none
+  auth: inherit
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200]).to.include(res.getStatus());
+  });
+}

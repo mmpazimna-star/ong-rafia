@@ -1,0 +1,17 @@
+meta {
+  name: Image publique (active)
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/uploads/active/home-bg.jpg
+  body: none
+  auth: none
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200, 404]).to.include(res.getStatus());
+  });
+}

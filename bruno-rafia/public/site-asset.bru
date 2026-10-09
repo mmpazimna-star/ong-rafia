@@ -1,0 +1,17 @@
+meta {
+  name: Asset d'une version
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/site/{{siteId}}/asset
+  body: none
+  auth: none
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200, 404]).to.include(res.getStatus());
+  });
+}

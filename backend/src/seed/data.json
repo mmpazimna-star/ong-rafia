@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "Home": {
+    "title": "ONG RAFIA",
+    "paragraph": "Depuis 1992, RAFIA accompagne les communautés rurales du Togo vers un développement durable.",
+    "backgroundImage": {
+      "name": "home-bg.jpg",
+      "type": "image/jpeg",
+      "path": "/home/home-bg.jpg",
+      "alt": "Image de présentation de l'ONG RAFIA"
+    }
+  },
+
+  "About": {
+    "title": "À propos de RAFIA",
+    "paragraph": "RAFIA est une ONG togolaise engagée dans le développement durable et l'autonomisation des communautés.",
+    "why": [
+      "Approche participative",
+      "Transparence et engagement"
+    ],
+    "aboutImage": {
+      "name": "about.jpg",
+      "type": "image/jpeg",
+      "path": "/about/about.jpg",
+      "alt": "Présentation de l'ONG RAFIA"
+    }
+  },
+
+  "Activities": [
+    {
+      "icon": {
+        "name": "leaf.svg",
+        "type": "image/svg+xml",
+        "path": "/icons/leaf.svg",
+        "alt": "Icône agriculture durable"
+      },
+      "title": "Agriculture durable",
+      "text": "Promotion de l'agroécologie et de pratiques agricoles respectueuses de l'environnement."
+    }
+  ],
+
+  "Projects": [
+    {
+      "title": "Transition agroécologique",
+      "largeImage": {
+        "name": "project-large.jpg",
+        "type": "image/jpeg",
+        "path": "/images/project-large.jpg",
+        "alt": "Projet agroécologique - image principale"
+      },
+      "smallImage": {
+        "name": "project-small.jpg",
+        "type": "image/jpeg",
+        "path": "/images/project-small.jpg",
+        "alt": "Projet agroécologique - image secondaire"
+      }
+    }
+  ],
+
+  "Team": [
+    {
+      "img": {
+        "name": "president.jpg",
+        "type": "image/jpeg",
+        "path": "/images/team/president.jpg",
+        "alt": "Président de l'ONG RAFIA"
+      },
+      "name": "Kossi Mensah",
+      "job": "Président de l'ONG RAFIA"
+    }
+  ],
+
+  "News": [
+    {
+      "img": {
+        "name": "news1.jpg",
+        "type": "image/jpeg",
+        "path": "/images/news/news1.jpg",
+        "alt": "Activité communautaire RAFIA"
+      },
+      "name": "Renforcement communautaire",
+      "text": "RAFIA renforce les capacités locales à travers des formations ciblées."
+    }
+  ],
+
+  "Contact": {
+    "address": "Lomé, Togo",
+    "phone": "+228 90 00 00 00",
+    "email": "contact@ongrafia.org",
+    "facebook": "https://facebook.com/ongrafia",
+    "twitter": "https://twitter.com/ongrafia",
+    "youtube": "https://youtube.com/@ongrafia"
+  },
+
+  "Donation": {
+    "address": "Lomé, Togo",
+    "phone": "+228 90 00 00 01",
+    "email": "don@ongrafia.org",
+    "facebook": "https://facebook.com/ongrafia",
+    "twitter": "https://twitter.com/ongrafia",
+    "youtube": "https://youtube.com/@ongrafia"
+  }
+}

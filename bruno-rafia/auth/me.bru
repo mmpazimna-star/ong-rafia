@@ -1,0 +1,21 @@
+meta {
+  name: Mon profil (admin)
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/users/me
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{adminToken}}
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([200]).to.include(res.getStatus());
+  });
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Mon profil sans token
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/api/users/me
+  body: none
+  auth: none
+}
+
+tests {
+  test("statut attendu", function () {
+    expect([401]).to.include(res.getStatus());
+  });
+}

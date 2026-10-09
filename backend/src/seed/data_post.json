@@ -1,0 +1,124 @@
+{
+  "home": {
+    "title": "ONG RAFIA",
+    "paragraph": "Depuis 1992, RAFIA accompagne les communautés rurales du Togo vers un développement durable, inclusif et ancré dans les réalités locales.",
+    "backgroundImage": {
+      "id": "4151220e-5786-4a97-b35d-a8ef3ba65fd4",
+      "name": "images_de_fond_ecran_et_arriere_plan_pour_un_site_web_agroec.jpg",
+      "type": "image/jpeg",
+      "path": "home/4151220e-5786-4a97-b35d-a8ef3ba65fd4.jpg"
+    }
+  },
+  "about": {
+    "title": "À propos de RAFIA",
+    "paragraph": "RAFIA est une ONG togolaise engagée dans le développement durable et l'autonomisation des communautés. Son action s'appuie sur les savoirs locaux, la participation citoyenne et des partenariats de proximité.",
+    "why": [
+      "Approche participative",
+      "Transparence et engagement",
+      "Promotion du genre",
+      "Innovation sociale"
+    ],
+    "aboutImage": {
+      "id": "a6de6864-a401-4002-9a9d-615aa25e5988",
+      "name": "OIG1.jpg",
+      "type": "image/jpeg",
+      "path": "about/a6de6864-a401-4002-9a9d-615aa25e5988.jpg"
+    },
+    "items": [
+      {
+        "title": "Agir avec les communautés",
+        "text": "Les priorités se construisent avec les habitantes et habitants, en tenant compte des besoins exprimés et des ressources du territoire."
+      },
+      {
+        "title": "Renforcer l'autonomie",
+        "text": "Les actions visent à transmettre des compétences utiles et à soutenir des initiatives locales portées par les communautés."
+      },
+      {
+        "title": "Préserver les ressources",
+        "text": "RAFIA promeut des approches durables qui favorisent la résilience des territoires et la gestion responsable des ressources naturelles."
+      }
+    ]
+  },
+  "activities": [
+    { "title": "Agroécologie", "text": "Accompagner l'adoption de pratiques agricoles qui préservent les sols, l'eau et la biodiversité." },
+    { "title": "Agriculture durable", "text": "Soutenir des systèmes de production adaptés aux conditions locales et aux besoins des exploitations familiales." },
+    { "title": "Maraîchage", "text": "Promouvoir des techniques de culture maraîchère économes en eau et adaptées aux saisons." },
+    { "title": "Gestion des sols", "text": "Encourager le compostage, la couverture des sols et d'autres pratiques de restauration de leur fertilité." },
+    { "title": "Protection de l'environnement", "text": "Sensibiliser à la préservation des ressources naturelles et aux gestes qui réduisent la pression sur les écosystèmes." },
+    { "title": "Apiculture", "text": "Développer les connaissances autour de l'apiculture et de son rôle dans les moyens de subsistance et la pollinisation." },
+    { "title": "Élevage durable", "text": "Partager des pratiques d'élevage adaptées au contexte local et attentives au bien-être animal." },
+    { "title": "Aviculture", "text": "Accompagner les petites unités avicoles sur la conduite d'élevage, l'hygiène et l'alimentation." },
+    { "title": "Pisciculture", "text": "Étudier et promouvoir des pratiques piscicoles responsables selon les ressources et les besoins des communautés." },
+    { "title": "Reboisement", "text": "Mobiliser les acteurs locaux autour de la restauration du couvert végétal et de la protection des espaces." },
+    { "title": "Conseil agricole", "text": "Faciliter l'accès à l'information, aux échanges de pratiques et à l'accompagnement technique de proximité." },
+    { "title": "Transformation des produits locaux", "text": "Explorer des techniques de transformation et de conservation adaptées aux productions locales." },
+    { "title": "Commercialisation agricole", "text": "Renforcer les connaissances sur les débouchés, la qualité des produits et l'organisation de la vente." },
+    { "title": "Adaptation aux changements climatiques", "text": "Partager des pratiques et des outils de planification adaptés aux aléas climatiques locaux." },
+    { "title": "Formation des organisations rurales", "text": "Proposer des formations sur la gouvernance, la gestion et la coordination des initiatives locales." },
+    { "title": "Entrepreneuriat des jeunes", "text": "Accompagner la réflexion autour d'activités rurales viables et adaptées aux compétences des jeunes." },
+    { "title": "Nutrition et alimentation", "text": "Sensibiliser à la diversité alimentaire et aux liens entre production locale et alimentation équilibrée." },
+    { "title": "Accès aux marchés", "text": "Favoriser les échanges d'information et la mise en relation entre producteurs, productrices et acheteurs." }
+  ],
+  "projects": [
+    { "title": "Transition agroécologique", "description": "Piste de projet à valider : accompagner les producteurs et productrices dans l'expérimentation de pratiques agroécologiques." },
+    { "title": "Jardins maraîchers résilients", "description": "Piste de projet à valider : renforcer les compétences en maraîchage et en gestion raisonnée de l'eau." },
+    { "title": "Sols vivants et compostage", "description": "Piste de projet à valider : valoriser les matières organiques et diffuser des techniques de restauration des sols." },
+    { "title": "Élevage familial amélioré", "description": "Piste de projet à valider : proposer un accompagnement technique adapté aux petits élevages familiaux." },
+    { "title": "Apiculture et biodiversité", "description": "Piste de projet à valider : relier le développement de l'apiculture à la préservation des pollinisateurs." },
+    { "title": "Entrepreneuriat rural", "description": "Piste de projet à valider : soutenir la structuration d'activités économiques locales, notamment portées par les femmes et les jeunes." },
+    { "title": "Restauration des paysages", "description": "Piste de projet à valider : élaborer avec les communautés des actions de reboisement et de gestion durable des ressources." },
+    { "title": "Pisciculture communautaire", "description": "Piste de projet à valider : étudier des solutions piscicoles adaptées aux ressources disponibles et aux savoir-faire locaux." },
+    { "title": "Transformation des produits agricoles", "description": "Piste de projet à valider : identifier des équipements et des techniques de transformation répondant aux besoins des groupements locaux." },
+    { "title": "Marchés locaux et circuits courts", "description": "Piste de projet à valider : faciliter les échanges entre organisations de producteurs et acheteurs de proximité." },
+    { "title": "Adaptation climatique des exploitations", "description": "Piste de projet à valider : tester avec les communautés des solutions agricoles adaptées aux variations du climat." },
+    { "title": "Jeunes entrepreneurs ruraux", "description": "Piste de projet à valider : accompagner la conception d'activités économiques rurales portées par des jeunes." },
+    { "title": "Nutrition et jardins familiaux", "description": "Piste de projet à valider : explorer la contribution des jardins familiaux à la diversité alimentaire des ménages." },
+    { "title": "Renforcement des organisations paysannes", "description": "Piste de projet à valider : proposer des outils de gestion et de gouvernance adaptés aux organisations rurales." }
+  ],
+  "team": [
+    { "name": "Kossi Mensah", "job": "Président de l'ONG RAFIA" },
+    { "name": "Nom à confirmer 02", "job": "Fonction à renseigner" },
+    { "name": "Nom à confirmer 03", "job": "Fonction à renseigner" },
+    { "name": "Nom à confirmer 04", "job": "Fonction à renseigner" },
+    { "name": "Nom à confirmer 05", "job": "Fonction à renseigner" },
+    { "name": "Nom à confirmer 06", "job": "Fonction à renseigner" },
+    { "name": "Nom à confirmer 07", "job": "Fonction à renseigner" },
+    { "name": "Nom à confirmer 08", "job": "Fonction à renseigner" }
+  ],
+  "news": [
+    { "name": "Agroécologie au quotidien", "text": "Proposition éditoriale à valider : présenter des pratiques agroécologiques et les retours d'expérience des communautés accompagnées." },
+    { "name": "Conseils pour les sols", "text": "Proposition éditoriale à valider : partager des méthodes de compostage et de protection de la fertilité des sols." },
+    { "name": "Paroles de producteurs", "text": "Proposition éditoriale à valider : donner la parole aux producteurs et productrices sur leurs priorités et leurs savoir-faire." },
+    { "name": "Initiatives des femmes rurales", "text": "Proposition éditoriale à valider : mettre en lumière les initiatives portées par les femmes dans les territoires ruraux." },
+    { "name": "Élevage et bonnes pratiques", "text": "Proposition éditoriale à valider : diffuser des repères pratiques pour un élevage familial adapté au contexte local." },
+    { "name": "Biodiversité et apiculture", "text": "Proposition éditoriale à valider : expliquer les liens entre pollinisateurs, apiculture et diversité des cultures." },
+    { "name": "Jeunes et initiatives locales", "text": "Proposition éditoriale à valider : présenter des pistes d'engagement et d'entrepreneuriat pour les jeunes en milieu rural." },
+    { "name": "Préserver les ressources", "text": "Proposition éditoriale à valider : partager des idées locales pour protéger les terres, l'eau et le couvert végétal." },
+    { "name": "Transformer les récoltes", "text": "Proposition éditoriale à valider : présenter des techniques de transformation et de conservation des produits agricoles locaux." },
+    { "name": "Vendre sur les marchés locaux", "text": "Proposition éditoriale à valider : partager des conseils de préparation à la vente et de valorisation des produits." },
+    { "name": "Agriculture et climat", "text": "Proposition éditoriale à valider : recueillir des pratiques d'adaptation aux variations de pluies et de températures." },
+    { "name": "Organisations rurales en action", "text": "Proposition éditoriale à valider : expliquer des outils simples de gouvernance et de gestion collective." },
+    { "name": "La place des jeunes en milieu rural", "text": "Proposition éditoriale à valider : partager des parcours et des idées d'activités portées par les jeunes." },
+    { "name": "Jardins et alimentation diversifiée", "text": "Proposition éditoriale à valider : explorer le rôle des jardins familiaux dans la diversité des repas." },
+    { "name": "Mieux connaître les marchés", "text": "Proposition éditoriale à valider : proposer des repères pour mieux comprendre les prix, les débouchés et la demande locale." },
+    { "name": "Entreprendre dans les territoires", "text": "Proposition éditoriale à valider : présenter des étapes de réflexion pour lancer une activité économique rurale." },
+    { "name": "Valoriser les savoir-faire locaux", "text": "Proposition éditoriale à valider : documenter des pratiques locales qui contribuent à la résilience des communautés." },
+    { "name": "Échanges entre producteurs", "text": "Proposition éditoriale à valider : présenter des formats d'échange et de partage d'expérience entre organisations rurales." }
+  ],
+  "contact": {
+    "address": "Lomé, Togo",
+    "phone": "+228 90 00 00 00",
+    "email": "contact@ongrafia.org",
+    "facebook": "https://facebook.com/ongrafia",
+    "twitter": "https://twitter.com/ongrafia",
+    "youtube": "https://youtube.com/@ongrafia"
+  },
+  "donation": {
+    "address": "Lomé, Togo",
+    "phone": "+228 90 00 00 01",
+    "email": "don@ongrafia.org",
+    "facebook": "https://facebook.com/ongrafia",
+    "twitter": "https://twitter.com/ongrafia",
+    "youtube": "https://youtube.com/@ongrafia"
+  }
+}
