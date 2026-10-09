@@ -2,14 +2,10 @@ services:
   - type: web
     name: rafia-api
     runtime: node
-    plan: starter
+    plan: free
     rootDir: backend
     buildCommand: npm install
     startCommand: npm start
-    disk:
-      name: rafia-uploads
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: MONGO_URI
         sync: false
@@ -19,5 +15,3 @@ services:
         sync: false
       - key: ADMIN_PASSWORD
         sync: false
-      - key: UPLOAD_DIR
-        value: /var/data
