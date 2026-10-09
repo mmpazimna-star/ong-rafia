@@ -27,7 +27,10 @@ app.use(errorHandler);
 
 // Connexion DB & lancement serveur
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(
+    process.env.MONGO_URI,
+    process.env.MONGO_DB_NAME ? { dbName: process.env.MONGO_DB_NAME } : {}
+  )
   .then(() =>
     app.listen(process.env.PORT || 5000, () =>
       console.log("Serveur prêt en prod")
